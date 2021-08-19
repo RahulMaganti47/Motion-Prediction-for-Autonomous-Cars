@@ -1,0 +1,74 @@
+\documentclass[10pt, reqno, letterpaper, twoside]{amsart}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{amssymb, bm, mathtools}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[pdftex, xetex]{graphicx}
+\usepackage{enumerate, setspace}
+\usepackage{float, colortbl, tabularx, longtable, multirow, subcaption, environ, wrapfig, textcomp, booktabs}
+\usepackage{pgf, tikz, framed, url, hyperref}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{arrows,positioning,automata,shadows,fit,shapes}
+\usepackage[english]{babel}
+
+\usepackage{microtype}
+\microtypecontext{spacing=nonfrench}
+
+\usepackage{times}
+\title{Project Title}
+\author{
+John Doe [john@seas],
+Jane Doe [jane@seas],
+Jack Jill [jj@seas],
+}
+
+\begin{document}
+
+\begin{abstract}
+Five-six short sentences with very clear sentences that mention what the paper is about and what the results are. Note that an abstract is \emph{not} an introduction, there is no need to talk about the importance of a problem in the abstract; the introduction section is the right place to do this.
+\end{abstract}
+
+\maketitle
+
+\section{Instructions}
+\textbf{
+    \begin{itemize}
+    \item Your report should be limited to 5 pages, 10pt Times New Roman font, 1 inch margins. You will be penalized for reports longer than 5 pages. References do not count in the page limit.
+    \item Your report is the best way for us to judge your work. Make sure you put in enough effort into the report. You should think of it as writing a short research paper/thesis. If you did not mention something in the report or did not write with enough clarity, it is hard for the instructors (or the reviewers of a publication) to judge the quality of your work.
+    \item You can use \href{https://billf.mit.edu/sites/default/files/documents/cvprPapers.pdf}{https://billf.mit.edu/sites/default/files/documents/cvprPapers.pdf} as guidelines for how to write well.
+    \end{itemize}
+}
+
+The following is an outline for the report. You can use this as a template but feel free to change things.
+
+\section{Introduction}
+
+What is the problem you want to solve. Why is it important.
+
+\subsection{Contributions}
+
+A list of concrete results in the report that the reader can quickly ascertain/understand.
+
+\section{Background}
+
+Introduce the problem and the notation if any.
+
+\section{Related Work}
+
+Note down references. Say how they relate to your approach. Your objective to put your work in context of the broader literature, namely, what other possible approaches exist for this problem, what they are good at or what they lack, what your approach does differently from them.
+
+\section{Approach}
+
+Details of your approach.
+
+\section{Experimental Results}
+
+Make sure you write clearly which datasets/architectures are used, how you pre-process the data, why you are reporting the metrics you are reporting. You should not simply say ``I did this experiment and this is the error'' like you'd do in a problem set. The objective of this section is to interpret the results, explain what they mean, what is good, what is bad etc.
+
+\section{Discussion}
+
+This section explains how to interpret the results in the context of the broader literature. You can talk about what did not work, what you'd like to do if you have more time/data/resources or more long-term investment that one would need to do to solve this specific problem.
+
+\section*{References}
+
+\end{document}
