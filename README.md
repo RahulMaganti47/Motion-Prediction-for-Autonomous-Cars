@@ -1,12 +1,27 @@
-# AWS Setup for ESE650
+# Motion Prediction for Autonomous Cars 
+Learning in Robotics (ESE650) Final Project
 
-## Assumptions
+## Abstract 
+
+Motion prediction is one of the few outstanding unsolved tasks of autonomous
+driving, and is critical to the deployment of safe autonomous vehicles (AV)s
+that are able to navigate complex environment. We evaluate a number of deep
+learning approaches to motion prediction, and propose a novel combination of a 
+convolutional social pooling and BEV convolutions to predict vehicle trajectories.
+
+Link to paper / report: 
+
+# Setup 
+
+## AWS Setup for ESE650
+
+### Assumptions
 
 1. Have a `key.pem` file from AWS in the local directory
 1. Have your public IPv4 instance address from AWS console
 1. Have a Deep learning AMI instance running
 
-## SSH
+### SSH
 
 ````sh
 ssh -L 8000:localhost:8000 -i ese650.pem ubuntu@3.85.16.98 
@@ -25,7 +40,7 @@ sudo chmod 600 /path/to/my/key.pem
 ````
 and try again.
 
-## Setting up Jupyter Notebook
+### Setting up Jupyter Notebook
 
 After running the above ssh command:
 
@@ -35,7 +50,7 @@ source activate pytorch_latest_p37
 jupyter notebook --no-browser --port=8888
 ````
 
-## View Jupyter Notebook
+### View Jupyter Notebook
 
 From a seperate shell than the previous one, run
 
@@ -49,14 +64,14 @@ Go to your browser and visit:
 localhost:8888
 ````
 
-## Uploading file
+### Uploading file
 
 ````sh
 scp -i sheils.pem kaggle.json ubuntu@54.90.44.142:~/ext_vol/kaggle.json
 scp -i sheils.pem lyft-ese650finalproj.ipynb ubuntu@54.90.44.142:~/lyft_model.ipynb
 ````
 
-## Downloading dataset 
+### Downloading dataset 
 
 ````sh
 sudo mv ext_vol/kaggle.json .kaggle/
@@ -64,7 +79,7 @@ sudo chmod 777 ext_vol
 kaggle competitions download -c lyft-motion-prediction-autonomous-vehicles
 ````
 
-## Unzip
+### Unzip
 
 ````sh
 sudo apt-get install unzip
