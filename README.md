@@ -9,7 +9,7 @@ that are able to navigate complex environment. We evaluate a number of deep
 learning approaches to motion prediction, and propose a novel combination of a 
 convolutional social pooling and BEV convolutions to predict vehicle trajectories.
 
-Link to paper / report: 
+Link to paper / report: https://github.com/RahulMaganti47/Motion-Prediction-for-Autonomous-Cars/blob/master/MotionPredictionForAutonomousCars_Report.pdf
 
 # Setup 
 
