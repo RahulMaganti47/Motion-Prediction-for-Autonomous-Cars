@@ -1,5 +1,4 @@
 # Motion Prediction for Autonomous Cars 
-Learning in Robotics (ESE650) Final Project
 
 ## Abstract 
 
@@ -13,7 +12,7 @@ Link to paper / report: https://github.com/RahulMaganti47/Motion-Prediction-for-
 
 # Setup 
 
-## AWS Setup for ESE650
+## AWS Setup
 
 ### Assumptions
 
